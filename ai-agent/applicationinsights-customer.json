@@ -1,0 +1,17 @@
+{
+  "connectionString": "${APPLICATIONINSIGHTS_CONNECTION_STRING}",
+  "role": {
+    "name": "customer-service"
+  },
+  "instrumentation": {
+    "logging": {
+      "level": "INFO"
+    },
+    "micrometer": {
+      "enabled": true
+    }
+  },
+  "preview": {
+    "professionalMode": true
+  }
+}

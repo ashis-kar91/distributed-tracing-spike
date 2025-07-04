@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: customer-service
+  
+server:
+  port: 8081
+
+# Management endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+# Logging Configuration
+logging:
+  level:
+    "[com.observability.spike]": INFO
